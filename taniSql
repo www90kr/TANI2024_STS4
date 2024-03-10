@@ -1,0 +1,128 @@
+CREATE TABLE acc
+(code NUMBER(10,0),
+	name VARCHAR2(50 CHAR),
+	mainImg VARCHAR2(50 CHAR),
+	detailImg VARCHAR2(50 CHAR),
+	starAvg NUMBER(10,0),
+	price NUMBER(10,0),
+cateCode VARCHAR2(50 CHAR)
+);
+--반지
+Insert Into ACC values (01, '나비링','https://i.postimg.cc/Y0K9FMQg/001.jpg', 'https://i.ibb.co/r6JYkJb/01.jpg', null, 350000, 'sort01' );
+Insert Into ACC values (02, '웨딩라인','https://i.postimg.cc/v8hLhqHJ/002.jpg', 'https://i.ibb.co/jkp1HM2/02.jpg', null, 490000, 'sort01' );
+Insert Into ACC values (03, '다이린','https://i.postimg.cc/YSjCcS1N/003.jpg', 'https://i.ibb.co/gFxFBLR/003.jpg', null, 350000, 'sort01' );
+Insert Into ACC values (04, '플라러드','https://i.postimg.cc/wj49kdS1/004.jpg', 'https://i.ibb.co/cvB7vWR/004.jpg', null, 290000, 'sort01' );
+Insert Into ACC values (05, '피안시에','https://i.postimg.cc/D0hhzfbM/005.jpg', 'https://i.ibb.co/MZ3LzBM/005.jpg', null, 350000, 'sort01' );
+Insert Into ACC values (06, '케이드','https://i.postimg.cc/GtjCT0Fh/006.jpg', 'https://i.ibb.co/FJ2rNYZ/006.jpg', null, 380000, 'sort01' );
+Insert Into ACC values (07, '가이나','https://i.postimg.cc/fTk29nj2/007.jpg', 'https://i.ibb.co/nM1gW2C/007.jpg', null, 350000, 'sort01' );
+Insert Into ACC values (08, '화인','https://i.postimg.cc/Wzy7nz69/008.jpg', 'https://i.ibb.co/TK4dN8G/008.jpg', null, 450000, 'sort01' );
+Insert Into ACC values (09, '테일러','https://i.postimg.cc/jjhQ1Z4n/009.jpg', 'https://i.ibb.co/Wtrf0d2/009.jpg', null, 290000, 'sort01' );
+Insert Into ACC values (10, '블라썸','https://i.postimg.cc/1X8GfPhD/010.jpg', 'https://i.ibb.co/M1bPrVB/010.jpg', null, 180000, 'sort01' );
+
+
+Insert Into ACC values (21, '헤이즐', 'https://i.ibb.co/YXGBSDz/001.jpg', 'https://i.ibb.co/xhvCjz9/001.jpg', null, 180000, 'sort02' );
+Insert Into ACC values (22, '메이', 'https://i.ibb.co/rfHsR6X/002.jpg', 'https://i.ibb.co/pJC5qtk/002.jpg', null, 290000, 'sort02' );
+Insert Into ACC values (23, '줄리아드','https://i.ibb.co/ydQGMvk/003.jpg', 'https://i.ibb.co/L5dgtx5/003.jpg',  null, 250000, 'sort02' );
+Insert Into ACC values (24, '트와일', 'https://i.ibb.co/Lv4YmdV/004.jpg', 'https://i.ibb.co/7X7CycC/004.jpg',  null, 210000, 'sort02' );
+Insert Into ACC values (25, '세일러', 'https://i.ibb.co/JttZwTZ/005.jpg', 'https://i.ibb.co/9vbkZvF/005.jpg',  null, 320000, 'sort02' );
+Insert Into ACC values (26, '블랑', 'https://i.ibb.co/7Y1BZN6/006.jpg', 'https://i.ibb.co/92JMgwH/006.jpg',  null, 330000, 'sort02' );
+
+
+Insert Into ACC values (31, '피오나','https://i.ibb.co/yBrmY9x/001.jpg', 'https://i.ibb.co/4svdkDn/001.jpg', null, 750000, 'sort03' );
+Insert Into ACC values (32, '레이니','https://i.ibb.co/McZ0YB3/002.jpg', 'https://i.ibb.co/0czth7m/002.jpg', null, 860000, 'sort03' );
+Insert Into ACC values (33, '드앙','https://i.ibb.co/7pjjYzW/003.jpg', 'https://i.ibb.co/7pv6YJV/003.jpg', null, 880000, 'sort03' );
+Insert Into ACC values (34, '콰이','https://i.ibb.co/7SBYCTL/004.jpg', 'https://i.ibb.co/jwKNprT/004.jpg', null, 610000, 'sort03' );
+Insert Into ACC values (35, '드앙','https://i.ibb.co/gdJ1HXM/005.jpg', 'hhttps://i.ibb.co/JHqB0hb/005.jpg', null, 780000, 'sort03' );
+Insert Into ACC values (36, '콰이','https://i.ibb.co/S0NqnjX/006.jpg', 'https://i.ibb.co/0MYGY3c/006.jpg', null, 810000, 'sort03' );
+
+
+Insert Into ACC values (41, '하빅스펙터','https://i.ibb.co/PD5VQ2m/001.jpg', 'https://i.ibb.co/HB8G9m0/001.jpg', null, 750000, 'sort04' );
+Insert Into ACC values (42, '아우토','https://i.ibb.co/4dpCDxg/002.jpg', 'https://i.ibb.co/T4j3WFg/002.jpg', null, 860000, 'sort04' );
+Insert Into ACC values (43, '발론','https://i.ibb.co/vvzkGDW/004.jpg', 'https://i.ibb.co/HTQ7MYj/004.jpg', null, 880000, 'sort04' );
+
+
+
+
+commit;
+
+
+
+
+
+  CREATE TABLE CATE 
+   (	CATECODE VARCHAR2(50 CHAR), 
+	CATENAME VARCHAR2(50 CHAR)
+   ) ;
+   
+
+Insert into CATE (CATECODE,CATENAME) values ('sort01','home');
+Insert into CATE (CATECODE,CATENAME) values ('sort02','ring');
+Insert into CATE (CATECODE,CATENAME) values ('sort03','necklace');
+Insert into CATE (CATECODE,CATENAME) values ('sort04','bracelet');
+Insert into CATE (CATECODE,CATENAME) values ('sort05','set');
+
+
+CREATE TABLE review 
+(
+reviewNo NUMBER(10,0), 
+Star NUMBER(1,0), 
+reviewContent CLOB, 
+username VARCHAR2(50 CHAR), 
+reviewDate DATE ,
+code  NUMBER(10,0)
+);
+
+
+CREATE TABLE cart
+(
+cartNo NUMBER(10,0),
+username VARCHAR2(50 CHAR), 
+code NUMBER(10,0), 
+cartNum NUMBER(10,0)
+);
+	
+
+
+ CREATE TABLE Orderr(orderNo NUMBER(10,0),
+ username VARCHAR2(50 CHAR),  
+shipName VARCHAR2(50 CHAR), 
+shipAddr VARCHAR2(200 CHAR), 
+orderPrice NUMBER(10,0), 
+orderDat date default sysdate );
+
+
+
+CREATE TABLE OrderDetail(
+odtNo NUMBER(10,0), 
+orderNo NUMBER(10,0), 
+code NUMBER(10,0), 
+cartNum NUMBER(10,0), 
+odtStatus VARCHAR2(50 CHAR) DEFAULT '후기작성');	
+
+CREATE TABLE manager(username VARCHAR2(100 CHAR), 
+spassword VARCHAR2(100 CHAR), 
+sname VARCHAR2(100 CHAR), 
+semail VARCHAR2(100 CHAR), 
+businessNo NUMBER(15,0),  
+stel NUMBER(38,0), 
+businessName VARCHAR2(100 CHAR),
+ENABLED NUMBER(1,0) DEFAULT 1, 
+ROLE VARCHAR2(15 CHAR) DEFAULT 'ROLE_MANAGER'
+		);
+
+
+CREATE TABLE Member(
+username  VARCHAR2(100 CHAR), 
+password  VARCHAR2(100 CHAR) , 
+name  VARCHAR2(100 CHAR), 
+email VARCHAR2(100 CHAR) , 
+nickname  VARCHAR2(100 CHAR), 
+tel  VARCHAR2(100 CHAR), 
+address  VARCHAR2(100 CHAR),
+ENABLED NUMBER(1,0) DEFAULT 1, 
+ROLE VARCHAR2(15 CHAR) DEFAULT 'ROLE_MEMBER'
+		);
+
+
+commit;
+
